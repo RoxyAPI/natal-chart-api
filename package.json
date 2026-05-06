@@ -1,0 +1,15 @@
+{
+  "name": "natal-chart-api",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Natal chart API. Per planet sign and house interpretations across 12 signs and 12 houses. Aspects, midheaven, ascendant.",
+  "license": "MIT",
+  "dependencies": {
+    "@roxyapi/sdk": "^1.2.23"
+  },
+  "scripts": {
+    "ts": "bun example.ts",
+    "js": "node example.js"
+  }
+}

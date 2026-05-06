@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "natal-chart-api",
+      "dependencies": {
+        "@roxyapi/sdk": "^1.2.23",
+      },
+    },
+  },
+  "packages": {
+    "@roxyapi/sdk": ["@roxyapi/sdk@1.2.23", "", {}, "sha512-X5JD0Z9VWUQkIimA0sfvdrhZ4W60y0XoclcNdcTyQo4QHaHNhzrtG9TxHvVGqdxnVqWRGcyeMC+p4MGW/wsVEA=="],
+  }
+}

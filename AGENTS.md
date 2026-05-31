@@ -6,7 +6,7 @@ This repo teaches AI coding agents (Cursor, Claude Code, Aider, Codex, Windsurf,
 - Method: `POST`
 - URL: `https://roxyapi.com/api/v2/astrology/natal-chart`
 - Auth: `X-API-Key` header
-- Domain: `astrology` (one of 10 in the RoxyAPI catalog)
+- Domain: `astrology` (one of 12 in the RoxyAPI catalog)
 - Operation ID: `generateNatalChart` matches the SDK method name in camelCase
 - MCP tool: `post_astrology_natal_chart` on `https://roxyapi.com/mcp/astrology`
 

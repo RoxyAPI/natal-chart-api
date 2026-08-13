@@ -22,7 +22,7 @@ A natal chart (birth chart) is the snapshot of the sky at the moment of birth. T
 | Calculation | Roxy Ephemeris, verified against NASA JPL Horizons |
 | MCP server | `https://roxyapi.com/mcp/astrology` (Streamable HTTP, no local setup) |
 | SDKs | TypeScript on npm `@roxyapi/sdk`, Python on PyPI `roxy-sdk`, PHP on Packagist `roxyapi/sdk`, C# on NuGet `RoxyApi.Sdk`, Go `github.com/RoxyAPI/sdk-go`, WordPress plugin `roxyapi` |
-| Pricing | One key, flat per call, $39 for 25K calls |
+| Pricing | One key, flat per call, from $39/mo |
 | Licensing | Personal and commercial use, including closed source apps. No AGPL or GPL entanglement. [Full terms](https://roxyapi.com/policy/license) |
 | Last verified | 2026-Q3 |
 

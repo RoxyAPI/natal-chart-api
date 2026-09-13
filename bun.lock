@@ -5,11 +5,11 @@
     "": {
       "name": "natal-chart-api",
       "dependencies": {
-        "@roxyapi/sdk": "^1.2.23",
+        "@roxyapi/sdk": "^1.2.80",
       },
     },
   },
   "packages": {
-    "@roxyapi/sdk": ["@roxyapi/sdk@1.2.23", "", {}, "sha512-X5JD0Z9VWUQkIimA0sfvdrhZ4W60y0XoclcNdcTyQo4QHaHNhzrtG9TxHvVGqdxnVqWRGcyeMC+p4MGW/wsVEA=="],
+    "@roxyapi/sdk": ["@roxyapi/sdk@1.2.80", "", {}, "sha512-qVoE8bGLC5vDgBT7fvSMLm+G/o7a9t4ey9FDzpRPhc+5fr+r/MQXrbLDJkqTJD8JD5ZuqrQhG9MmRk9o5ZayPQ=="],
   }
 }

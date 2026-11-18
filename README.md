@@ -182,9 +182,9 @@ console.log('Pattern:', data.aspectsInterpretation.summary);
       "speed": 0.9541,
       "isRetrograde": false,
       "interpretation": {
-        "summary": "Your Sun in Cancer in The Ninth House reveals how you express self-awareness and ego in the realm of beliefs.",
-        "detailed": "Sun represents self-awareness and ego. In Cancer, this energy becomes intuitive, nurturing, protective...",
-        "keywords": ["intuitive", "emotional", "intelligent", "passionate"]
+        "summary": "Belonging is the root of your power, and you are most yourself with your people gathered close. Faith, scholarship and far shores stretch you, and every wider view adds to who you are becoming.",
+        "detailed": "You remember birthdays, keep every handwritten note, and notice who stopped talking halfway through dinner...",
+        "keywords": ["nurturing", "loyalty", "memory", "tenderness"]
       }
     }
   ],
@@ -205,11 +205,11 @@ console.log('Pattern:', data.aspectsInterpretation.summary);
     }
   ],
   "aspectsInterpretation": {
-    "summary": "Your chart contains 33 aspects: 5 harmonious, 16 challenging, and 12 neutral.",
-    "dominant": "balanced",
-    "harmonious": 5,
+    "summary": "Friction drives this chart, which tends to make you someone who grows by working things through rather than waiting for them to settle.",
+    "dominant": "challenging",
+    "harmonious": 7,
     "challenging": 16,
-    "neutral": 12
+    "neutral": 6
   },
   "ascendant": { "sign": "Scorpio", "degree": 6.94, "longitude": 216.94 },
   "midheaven": { "sign": "Leo", "degree": 14.37, "longitude": 134.37 },
@@ -226,12 +226,12 @@ console.log('Pattern:', data.aspectsInterpretation.summary);
 | Field | Type | Description |
 |-------|------|-------------|
 | `birthDetails` | object | Birth details echoed back from the request. Confirms the input used for this chart |
-| `planets` | array | All 10 planetary positions with zodiac signs, house placements, and interpretations. Includes North Node, South Node, and Chiron |
+| `planets` | array | All 14 bodies with zodiac signs, house placements, and readings: the 10 planets, the lunar nodes, Chiron, and Black Moon Lilith |
 | `planets[].sign` | string | Tropical zodiac sign this planet occupies |
 | `planets[].house` | number | House placement (1-12) based on the selected house system |
 | `planets[].speed` | number | Daily motion in degrees per day. Negative values indicate retrograde |
 | `planets[].isRetrograde` | boolean | Whether the planet is in retrograde motion |
-| `planets[].interpretation` | object | Planet-in-sign-in-house narrative analysis with `summary`, `detailed`, and `keywords` |
+| `planets[].interpretation` | object | Reading of this body in its sign and house for this chart, with `summary`, `detailed`, and `keywords` |
 | `houses` | array | All 12 house cusps with zodiac positions. House cusps divide the chart into life areas |
 | `houseSystem` | string | House system used for this chart (`placidus`, `whole-sign`, `equal`, or `koch`) |
 | `aspects` | array | All planetary aspects found in this chart with orbs, strength, and interpretation |
@@ -240,8 +240,9 @@ console.log('Pattern:', data.aspectsInterpretation.summary);
 | `aspects[].strength` | number | Aspect strength percentage (0-100) based on orb tightness |
 | `aspects[].isApplying` | boolean | Whether the aspect is applying (growing stronger) or separating (fading) |
 | `aspectsInterpretation` | object | Aspect pattern analysis: count of harmonious, challenging, neutral plus narrative `summary` and `dominant` flag |
-| `ascendant` | object | Rising sign at the eastern horizon. Defines outward personality and physical appearance |
-| `midheaven` | object | MC. The highest point of the ecliptic at birth, representing career direction and public image |
+| `ascendant` | object | Rising sign at the eastern horizon, with its own `interpretation` (`summary`, `detailed`) |
+| `midheaven` | object | MC, the highest point of the ecliptic at birth, with its own `interpretation` (`summary`, `detailed`) |
+| `interpretation` | object | The whole-chart reading: `opening`, `love`, `career`, `home`, and `closing`, in the requested language |
 | `summary` | object | Chart summary with `dominantElement`, `dominantModality`, `retrogradePlanets`, `elementDistribution`, `modalityDistribution` |
 
 ## Common use cases

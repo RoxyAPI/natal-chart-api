@@ -62,13 +62,14 @@ const { data } = await roxy.astrology.generateNatalChart({
 
 ## Response top level keys
 - `birthDetails`: echoed input (date, time, latitude, longitude, resolved timezone offset)
-- `planets[]`: 13 entries (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, North Node, South Node, Chiron). Each has `name`, `longitude`, `latitude`, `sign`, `degree`, `house`, `speed`, `isRetrograde`, and `interpretation` object with `summary`, `detailed`, `keywords`
+- `planets[]`: 14 entries (Sun, Moon, Mercury, Venus, Mars, Jupiter, Saturn, Uranus, Neptune, Pluto, North Node, South Node, Chiron, Black Moon Lilith). Each has `name`, `longitude`, `latitude`, `sign`, `degree`, `house`, `speed`, `isRetrograde`, and `interpretation` object with `summary`, `detailed`, `keywords`
 - `houses[]`: 12 entries with `number`, `longitude`, `sign`, `degree`. Cusps for the chosen house system
 - `houseSystem`: echoed enum value
 - `aspects[]`: planetary aspects with `planet1`, `planet2`, `type`, `angle`, `orb`, `isApplying`, `strength` (0-100), `interpretation` (harmonious/challenging/neutral)
 - `aspectsInterpretation`: `summary` narrative, `dominant` flag, `harmonious`, `challenging`, `neutral` counts
-- `ascendant`: `sign`, `degree`, `longitude`. Rising sign at the eastern horizon
-- `midheaven`: `sign`, `degree`, `longitude`. MC, highest point of the ecliptic
+- `ascendant`: `sign`, `degree`, `longitude`, `interpretation` (`summary`, `detailed`). Rising sign at the eastern horizon
+- `midheaven`: `sign`, `degree`, `longitude`, `interpretation` (`summary`, `detailed`). MC, highest point of the ecliptic
+- `interpretation`: the whole-chart reading as `opening`, `love`, `career`, `home`, `closing`, in the requested language
 - `summary`: `dominantElement`, `dominantModality`, `retrogradePlanets[]`, `elementDistribution` (Fire/Earth/Air/Water counts), `modalityDistribution` (Cardinal/Fixed/Mutable counts)
 
 ## Domain rules
